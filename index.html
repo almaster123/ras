@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Ciudad por Número de Teléfono</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    
+    <h1>Rastrear</h1>
+    <div class="search-box">
+        <label for="phoneNumberInput">Número de Celular:</label>
+        <input type="text" id="phoneNumberInput" placeholder="Ingrese codigo de area..." onkeypress="return soloNumeros(event)">
+        <input type="text" id="numero" placeholder="Ingrese el número..." onkeypress="return soloNumeros(event)">
+        <button onclick="iniciarRastreo()">Buscar</button>
+    </div>
+        <!-- Modal de Rastreo -->
+        <div id="rastreoModal" class="modal">
+            <div class="modal-content">
+                <h2>Rastreo GPS</h2>
+                <div id="barraCarga" class="progress-bar"></div>
+                <p id="textoRastreo">Localizando dispositivo...</p>
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <h2>Número de Referido</h2>
+                <p id="referidoNumber"></p>
+                <button onclick="realizarPago()">Pagar con Mercado Pago</button>
+                <a id="downloadRef" href="#" download="referido.txt">Descargar Referido</a>
+            </div>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    
+
+<!-- Modal de aviso de cookies -->
+<div id="aviso-cookies-modal" class="modal cookies-modal">
+  <!-- Contenido del modal de cookies -->
+</div>
+
+
+
+
+<footer class="footer">
+    <p>&copy; 2024 InfoGlobe - Todos los derechos reservados</p>
+    <p><a href="Términos y Condiciones.html">Términos y Condiciones</a></p>
+</footer>
+
+<script>
+  function iniciarRastreo() {
+      // Obtener el valor del campo de entrada
+      var phoneNumber = document.getElementById("phoneNumberInput").value;
+
+      // Lógica para iniciar el rastreo...
+  }
+
+  function soloNumeros(event) {
+      var key = event.key;
+      return /\d/.test(key);
+  }
+</script>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

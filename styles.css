@@ -1,0 +1,161 @@
+body {
+    background-image: url(/tiro-medio-hombre-trabajando-computadora-portatil.jpg);
+    background-color: #1f1f1f;
+    color: #00ff00;
+    font-family: 'Roboto', sans-serif;
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding: 0; /* Elimina el relleno predeterminado del body */
+}
+
+.container {
+    max-width: 800px;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Agrega un fondo semi-transparente */
+    border-radius: 10px; /* Agrega bordes redondeados */
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    text-align: center;
+    color: #fff; /* Cambia el color de los encabezados a blanco */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #00ff00;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #00ff00;
+    background-color: #1f1f1f;
+    color: #00ff00;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-radius: 5px; /* Agrega bordes redondeados a los campos de entrada y botones */
+}
+
+button {
+    cursor: pointer;
+    background-color: #00ff00;
+    color: #1f1f1f;
+    border: 2px solid #00ff00;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; /* Agrega bordes redondeados a los botones */
+}
+
+button:hover {
+    background-color: #00dd00;
+    color: #fff;
+}
+
+.result {
+    padding: 20px;
+    border: 2px solid #00ff00;
+    background-color: #1f1f1f;
+    color: #fff; /* Cambia el color del texto a blanco */
+    border-radius: 5px; /* Agrega bordes redondeados */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #1f1f1f;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #00ff00;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #00ff00;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #00ff00;
+    height: 20px;
+    border-radius: 10px;
+}
+
+#barraCarga {
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#textoRastreo {
+    margin-top: 10px;
+}
+
+/* Estilos para el enlace de descarga */
+#downloadRef {
+    display: block;
+    margin-top: 10px;
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#downloadRef:hover {
+    color: #fff;
+}
+
+
+/* Estilos específicos para el modal de cookies */
+.cookies-modal {
+    background-color: #ffeeba; /* Cambia el color de fondo */
+    color: #856404; /* Cambia el color del texto */
+    border: 2px solid #ffc107; /* Cambia el borde */
+}
+
+.cookies-modal .modal-content {
+    padding: 30px; /* Cambia el relleno */
+}
+
+.cookies-modal .close {
+    color: #856404; /* Cambia el color del botón de cierre */
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.mapa {
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    height: 400px; /* Altura fija de 400px (ajusta según sea necesario) */
+}

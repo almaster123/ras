@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega de Resultados</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/js/leaflet/leaflet.js"></script>
+    <link rel="stylesheet" href="js/leaflet/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Entrega de Resultados</h1>
+        <label for="refNumberInput">Número de Referido:</label>
+        <input type="text" id="refNumberInput" placeholder="Ingrese su número de referido">
+        
+        <button onclick="mostrarResultado()">Mostrar Resultado</button>
+
+      <!--  <h2>Resultado:</h2>
+        <p id="result">La ciudad correspondiente aparecerá aquí.</p> -->
+        <div id="resultadoModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarResultadoModal()">&times;</span>
+                <h2>Resultado de la Búsqueda</h2>
+                <p id="resultadoCiudad"></p>
+                <div id="mapa" class="mapa"></div>
+            </div>
+        </div>
+        
+
+
+        
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
